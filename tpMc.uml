@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_n1whgItfEemGZPFp0h89_w" name="tpMc">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ompy8ItfEemGZPFp0h89_w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_KqhkkI1bEemOvYJM_mawig">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_oDT1UItfEemGZPFp0h89_w" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_oMF94ItfEemGZPFp0h89_w" name="Interaction2"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ieGuEItkEemGZPFp0h89_w" memberEnd="_ieHVIYtkEemGZPFp0h89_w _ieHVJItkEemGZPFp0h89_w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ieGuEYtkEemGZPFp0h89_w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ieHVIItkEemGZPFp0h89_w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ieHVJItkEemGZPFp0h89_w" name="personnel" type="_-FD1QItfEemGZPFp0h89_w" association="_ieGuEItkEemGZPFp0h89_w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ieHVIYtkEemGZPFp0h89_w" name="superviseur" type="_JOmVgItgEemGZPFp0h89_w" aggregation="shared" association="_ieGuEItkEemGZPFp0h89_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ieHVIotkEemGZPFp0h89_w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ieHVI4tkEemGZPFp0h89_w" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pdF5cItkEemGZPFp0h89_w" memberEnd="_pdGggotkEemGZPFp0h89_w _pdGghYtkEemGZPFp0h89_w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pdGggItkEemGZPFp0h89_w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pdGggYtkEemGZPFp0h89_w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pdGghYtkEemGZPFp0h89_w" name="personnel" type="_-FD1QItfEemGZPFp0h89_w" association="_pdF5cItkEemGZPFp0h89_w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pdGggotkEemGZPFp0h89_w" name="employé" type="_HGYEwItgEemGZPFp0h89_w" aggregation="shared" association="_pdF5cItkEemGZPFp0h89_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pdGgg4tkEemGZPFp0h89_w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pdGghItkEemGZPFp0h89_w" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_3n21oI0-EemOvYJM_mawig" name="automatisation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_C8bz4ItgEemGZPFp0h89_w" name="Personne">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dQcToI1XEemOvYJM_mawig" name="matricule" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kHuUgI1XEemOvYJM_mawig" name="Nom" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Uzm0UIthEemGZPFp0h89_w" name="setNom">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Uzm0UYthEemGZPFp0h89_w" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_oMM2kI1XEemOvYJM_mawig" name="getNom(int matric)"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_trslII1XEemOvYJM_mawig" name="setNom(int matric)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HGYEwItgEemGZPFp0h89_w" name="Employé" visibility="private">
+      <generalization xmi:type="uml:Generalization" xmi:id="_kgINAItgEemGZPFp0h89_w" general="_C8bz4ItgEemGZPFp0h89_w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5Le6YYtjEemGZPFp0h89_w" name="chargement" type="_Q6UrEItgEemGZPFp0h89_w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5Le6YotjEemGZPFp0h89_w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5LfhcItjEemGZPFp0h89_w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fMxoAo1YEemOvYJM_mawig" name="article" type="_UXjm8ItgEemGZPFp0h89_w" association="_fMwZ4I1YEemOvYJM_mawig">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fMyPEI1YEemOvYJM_mawig"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fMy2II1YEemOvYJM_mawig" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4bA8MItiEemGZPFp0h89_w" name="setMatricul">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_4bA8MYtiEemGZPFp0h89_w" name="int">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_2cMxcI1XEemOvYJM_mawig" name="setMatricule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JOmVgItgEemGZPFp0h89_w" name="Superviseur">
+      <generalization xmi:type="uml:Generalization" xmi:id="_OTVIwItiEemGZPFp0h89_w" general="_C8bz4ItgEemGZPFp0h89_w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UhgYII1YEemOvYJM_mawig" name="stock" type="_Sprv4ItgEemGZPFp0h89_w" association="_UhRHkI1YEemOvYJM_mawig">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UhgYIY1YEemOvYJM_mawig"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Uhg_MI1YEemOvYJM_mawig" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7z-ucI1XEemOvYJM_mawig" name="setPrivilége"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-FD1QItfEemGZPFp0h89_w" name="Personnel" visibility="public">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_RsSMIItjEemGZPFp0h89_w" name="AjoutEmploye">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_RsSMIYtjEemGZPFp0h89_w" name="Emplooye" type="_HGYEwItgEemGZPFp0h89_w"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Y008IItjEemGZPFp0h89_w" name="suppEmploye">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y008IYtjEemGZPFp0h89_w" name="employe" type="_HGYEwItgEemGZPFp0h89_w"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__SakMI1XEemOvYJM_mawig" name="suppEmploye"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_A6lb4I1YEemOvYJM_mawig" name="ajouterEmploye"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q6UrEItgEemGZPFp0h89_w" name="Chargement" visibility="private">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eu4fwItjEemGZPFp0h89_w" name="quantiré" aggregation="shared">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_f0W6EItjEemGZPFp0h89_w" name="Reference">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gaHSgItjEemGZPFp0h89_w" name="emplacement">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__fd20Y1ZEemOvYJM_mawig" name="stock" type="_Sprv4ItgEemGZPFp0h89_w" association="__fcBoI1ZEemOvYJM_mawig">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__fed4I1ZEemOvYJM_mawig"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ffE8I1ZEemOvYJM_mawig" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UXjm8ItgEemGZPFp0h89_w" name="Article">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gUyY841YEemOvYJM_mawig" name="stock" type="_Sprv4ItgEemGZPFp0h89_w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gUzAAI1YEemOvYJM_mawig"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gUzAAY1YEemOvYJM_mawig" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CTMs0ItkEemGZPFp0h89_w" name="getEmploye">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_KSCysItkEemGZPFp0h89_w" name="employe" type="_HGYEwItgEemGZPFp0h89_w"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Sprv4ItgEemGZPFp0h89_w" name="Stock"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UhRHkI1YEemOvYJM_mawig" memberEnd="_UhgYII1YEemOvYJM_mawig _Uhg_MY1YEemOvYJM_mawig">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UhfKAI1YEemOvYJM_mawig" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UhfxEI1YEemOvYJM_mawig" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Uhg_MY1YEemOvYJM_mawig" name="superviseur" type="_JOmVgItgEemGZPFp0h89_w" association="_UhRHkI1YEemOvYJM_mawig"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fMwZ4I1YEemOvYJM_mawig" memberEnd="_fMxoAo1YEemOvYJM_mawig _fMzdMI1YEemOvYJM_mawig">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fMxoAI1YEemOvYJM_mawig" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fMxoAY1YEemOvYJM_mawig" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fMzdMI1YEemOvYJM_mawig" name="employé" type="_HGYEwItgEemGZPFp0h89_w" association="_fMwZ4I1YEemOvYJM_mawig"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yM_JkI1YEemOvYJM_mawig" memberEnd="_yM_woo1YEemOvYJM_mawig _yNAXso1YEemOvYJM_mawig">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yM_woI1YEemOvYJM_mawig" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yM_woY1YEemOvYJM_mawig" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yNAXso1YEemOvYJM_mawig" name="stock" type="_Sprv4ItgEemGZPFp0h89_w" association="_yM_JkI1YEemOvYJM_mawig"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yM_woo1YEemOvYJM_mawig" name="article" type="_UXjm8ItgEemGZPFp0h89_w" aggregation="composite" association="_yM_JkI1YEemOvYJM_mawig">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yNAXsI1YEemOvYJM_mawig"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yNAXsY1YEemOvYJM_mawig" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_Bw4VQI1ZEemOvYJM_mawig" name="Emplacement" memberEnd="_Bw48Uo1ZEemOvYJM_mawig _Bw5jYI1ZEemOvYJM_mawig">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bw48UI1ZEemOvYJM_mawig" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bw48UY1ZEemOvYJM_mawig" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Bw48Uo1ZEemOvYJM_mawig" name="stock" type="_Sprv4ItgEemGZPFp0h89_w" association="_Bw4VQI1ZEemOvYJM_mawig"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Bw5jYI1ZEemOvYJM_mawig" name="article" type="_UXjm8ItgEemGZPFp0h89_w" association="_Bw4VQI1ZEemOvYJM_mawig"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__fcBoI1ZEemOvYJM_mawig" memberEnd="__fd20Y1ZEemOvYJM_mawig __ffE8Y1ZEemOvYJM_mawig">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__fdPwI1ZEemOvYJM_mawig" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__fd20I1ZEemOvYJM_mawig" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__ffE8Y1ZEemOvYJM_mawig" name="chargement" type="_Q6UrEItgEemGZPFp0h89_w" association="__fcBoI1ZEemOvYJM_mawig"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_wlDiAIthEemGZPFp0h89_w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wlFXMIthEemGZPFp0h89_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_h0ph0I1bEemOvYJM_mawig">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h0rXAI1bEemOvYJM_mawig" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </profileApplication>
+</uml:Model>

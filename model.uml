@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_qsvCAI1JEemOvYJM_mawig" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_q6RHsI1JEemOvYJM_mawig">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_qt774I1JEemOvYJM_mawig" name="Interaction1">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_xVWUwI1JEemOvYJM_mawig" name="Admin" coveredBy="_D-HmsI1KEemOvYJM_mawig"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_0cOmII1JEemOvYJM_mawig" name="Employe" coveredBy="_D-KC8I1KEemOvYJM_mawig"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_9zsEwI1JEemOvYJM_mawig" name="Personne"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_D-HmsI1KEemOvYJM_mawig" name="Message4SendEvent" covered="_xVWUwI1JEemOvYJM_mawig" message="_D9n3cI1KEemOvYJM_mawig"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_D-KC8I1KEemOvYJM_mawig" name="Message4ReceiveEvent" covered="_0cOmII1JEemOvYJM_mawig" message="_D9n3cI1KEemOvYJM_mawig"/>
+    <fragment xmi:type="uml:InteractionUse" xmi:id="_OCHbMI1KEemOvYJM_mawig" name="InteractionUse7"/>
+    <message xmi:type="uml:Message" xmi:id="_D9n3cI1KEemOvYJM_mawig" name="AjouterEmplye(matricule int)" messageSort="asynchCall" receiveEvent="_D-KC8I1KEemOvYJM_mawig" sendEvent="_D-HmsI1KEemOvYJM_mawig"/>
+  </packagedElement>
+</uml:Model>
